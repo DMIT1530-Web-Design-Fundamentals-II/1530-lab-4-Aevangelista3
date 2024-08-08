@@ -12,16 +12,262 @@ body {
     background-color: var(--white);
     color: var(--black);
     font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
+header {
+    text-align: center;
+    position: relative;
+}
 
+header img {
+    max-width: 100%;
+    height: auto;
+}
 
-/* ON YOUR OWN
+header .logo-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+}
 
-    Write a special media query that only applies to the two smallest screen sizes. In these layouts, the brand (the logo and name of the company should):
+header .logo-container img {
+    height: 40px;
+    margin-right: 10px;
+}
 
-    1. be positioned at the top of the page
-    2. have white text
-    3. have a drop-shadow on the text
+header .logo-container .brand-name {
+    color: var(--white);
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
 
-*/
+header h1 {
+    font-size: 2rem;
+    margin: 20px;
+    text-align: left;
+}
+
+header p {
+    font-size: 1rem;
+    text-align: left;
+    margin-top: 10px;
+    margin: 20px;
+}
+
+.cta-banner {
+    background-color: var(--yellow);
+    padding: 10px;
+    margin: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+main {
+    margin: 20px;
+    background-color: var(--mid-grey);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form section {
+    margin-bottom: 20px;
+}
+
+form h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+form label {
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+form input,
+form select {
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: var(--grey-blue);
+    color: var(--white);
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+form button:hover {
+    background-color: var(--grey-blue-hover);
+}
+
+.terms {
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
+
+@media (min-width: 480px) {
+    header h1 {
+        font-size: 1.4rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    .cta-banner {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    form {
+        padding: 8px;
+    }
+
+    form h2 {
+        font-size: 1.2rem;
+    }
+
+    form label {
+        font-size: 0.9rem;
+    }
+
+    form input,
+    form select {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    form button {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .terms {
+        font-size: 0.8rem;
+    }
+
+    form section {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    form label {
+        align-self: flex-start;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    form input,
+    form select {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+@media (min-width: 600px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    header h1 {
+        font-size: 2rem;
+        text-align: left;
+        margin: 10px;
+    }
+
+    header p {
+        font-size: 1.2rem;
+        text-align: left;
+        margin: 10px;
+    }
+
+    .cta-banner {
+        background-color: var(--yellow);
+        padding: 15px;
+        margin: 20px auto;
+        font-weight: bold;
+        text-align: center;
+        color: white;
+        max-width: 600px;
+    }
+
+    main {
+        margin: 20px auto;
+        background-color: var(--mid-grey);
+        max-width: 600px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    form section {
+        margin-bottom: 20px;
+    }
+
+    form h2 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    form label {
+        font-size: 1rem;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        display: block;
+    }
+
+    form input,
+    form select {
+        padding: 10px;
+        margin-top: 5px;
+        font-size: 1rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    form button {
+        background-color: var(--grey-blue);
+        color: var(--white);
+        padding: 15px;
+        border: none;
+        cursor: pointer;
+        font-size: 1.2rem;
+    }
+
+    form button:hover {
+        background-color: var(--grey-blue-hover);
+    }
+
+    .terms {
+        font-size: 0.9rem;
+        margin-top: 20px;
+        text-align: center;
+    }
+}
